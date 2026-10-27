@@ -1,0 +1,29 @@
+{
+  "status": "locally_executed_and_reproduced",
+  "standalone": true,
+  "qpu_jobs_submitted": 0,
+  "hub_execution_status": "not_verified_after_login",
+  "github_repository_url": "https://github.com/Hoon34/Quandela",
+  "rmse": {
+    "Linear Ridge": 1.2851371772114364,
+    "Photonic reservoir + Ridge": 1.201754503025314
+  },
+  "python": "3.13.16",
+  "versions": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "torch": "2.12.1",
+    "perceval-quandela": "1.3.1",
+    "merlinquantum": "0.4.2",
+    "rdkit": "2026.9.1",
+    "matplotlib": "3.11.2"
+  },
+  "code_cells_executed": 15,
+  "local_execution_seconds": 11.257625599973835,
+  "max_prediction_difference": {
+    "linear": 5.46229728115577e-14,
+    "photonic": 4.707345624410664e-14
+  }
+}

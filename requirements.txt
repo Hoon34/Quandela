@@ -1,0 +1,11 @@
+# Compatible setup. Existing Hub environments can run the notebook setup cell instead.
+numpy>=1.26,<3
+pandas>=2.2,<4
+scipy>=1.13,<2
+scikit-learn>=1.4,<2
+matplotlib>=3.8,<4
+rdkit>=2024.3
+torch>=2.2,<3
+perceval-quandela>=1.3.1,<2
+merlinquantum>=0.4.2,<0.5
+threadpoolctl>=3.1

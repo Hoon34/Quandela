@@ -1,0 +1,12 @@
+DATA SOURCE AND LICENSE
+BigSolDB 2.2, official record https://zenodo.org/records/22648301
+Authors: Lev Krasnov; Dmitry Malikov; Marina Kiseleva; Sergei Tatarin; Sergey Sosnin; Stanislav Bezzubov.
+Related article: https://doi.org/10.1038/s41597-025-05559-8
+The official Zenodo record's data license is Creative Commons Attribution 4.0 International (CC BY 4.0).
+License: https://creativecommons.org/licenses/by/4.0/
+
+Changes by this seminar project: filtered to water, exactly 298.15 K, equilibrium methods, finite converted LogS and valid mole fraction; computed RDKit descriptors; aggregated repeated measurements by canonical isomeric SMILES using the median of reported log-solubility; added train/test assignments. Original Source DOI values are retained in the measurement CSV and source_dois in the molecule CSV.
+These derived data files are supplied under CC BY 4.0. Retain attribution, license link and modification notices when redistributing them. Do not imply that the data authors endorse Quandela or this seminar.
+This data license does not relicense third-party software dependencies.
+
+TARGET NOTE: BigSolDB v2.2 LogS(mol/L) is recalculated using pure-solvent density. Its denominator is litres of solvent, not litres of solution. The model target is the molecule-wise median of that converted reported value. pH and solid-form effects are not modeled. These are not newly performed measurements.

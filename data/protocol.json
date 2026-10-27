@@ -1,0 +1,51 @@
+{
+  "source": "https://zenodo.org/records/22648301",
+  "license": "CC BY 4.0",
+  "features": [
+    "MolWt",
+    "MolLogP",
+    "TPSA",
+    "NumHDonors",
+    "NumRotatableBonds",
+    "RingCount"
+  ],
+  "molecules": 554,
+  "development": 443,
+  "evaluation": 111,
+  "original_measurements": 645,
+  "temperature_K": 298.15,
+  "solvent": "water",
+  "target": "molecule-wise median of reported LogS(mol/L)",
+  "target_unit": "log10(moles solute / litre solvent), not litre solution",
+  "split": "Frozen connectivity-group-disjoint random split, seed 20261020",
+  "limitations": "pH/solid form not modeled. The evaluation split had been inspected for the earlier kernel study before this follow-up. Configuration selected only on development, but this is not new independent validation.",
+  "linear_alpha": 10.0,
+  "reservoir_alpha": 1e-05,
+  "frozen_results": [
+    {
+      "model": "linear",
+      "repeated_development_cv_rmse": 1.3679112495118464,
+      "holdout_rmse": 1.285137177211435,
+      "holdout_mae": 1.026830926316068,
+      "holdout_r2": 0.5223410954298968,
+      "development_scaffold_stress_rmse": 1.4018353466745053,
+      "alpha": 10.0
+    },
+    {
+      "model": "reservoir",
+      "repeated_development_cv_rmse": 1.206750021365223,
+      "holdout_rmse": 1.2017545030253152,
+      "holdout_mae": 0.9529532248702807,
+      "holdout_r2": 0.5823135180177861,
+      "development_scaffold_stress_rmse": 1.2871958629671725,
+      "alpha": 1e-05,
+      "probability_scaling": "raw",
+      "fock_dimension": 56
+    }
+  ],
+  "data_changes": "Selected columns from the prior descriptor table; no target or split changes. RDKit descriptors, filtering, aggregation and split were added to the original public data.",
+  "source_table_sha256": "1c217d060a35c3e683066ae6204fc75fb93c9b7631829925676dc7038cef99d1",
+  "student_table_sha256": "f853c105d4f713751281bf1c0993ff7db0d4799db5cfbdc921503c399157bd88",
+  "ideal_simulation_only": true,
+  "qpu_jobs_submitted": 0
+}
