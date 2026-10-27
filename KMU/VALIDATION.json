@@ -4,6 +4,7 @@
   "qpu_jobs_submitted": 0,
   "hub_execution_status": "not_verified_after_login",
   "github_repository_url": "https://github.com/Hoon34/Quandela",
+  "github_demo_url": "https://github.com/Hoon34/Quandela/tree/main/KMU",
   "rmse": {
     "Linear Ridge": 1.2851371772114364,
     "Photonic reservoir + Ridge": 1.201754503025314
